@@ -1,0 +1,40 @@
+.main {
+  font-family: 'Lato', Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2em 4.5em 2em 4.5em ;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 300;
+  color: #47a3da;
+  display: block;
+  border-bottom: solid 1px lightgrey;
+  padding: .5em 0em .5em 0em;
+}
+
+.lihead {
+  display: block;
+}
+.lihead:before {
+  display: inline-block;
+}
+
+.lihead p {
+  color: #888;
+  padding-top: 1em;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.50;
+
+}
+
+.lipar {
+  padding-left: 3em;
+  line-height: 1.5em;
+  padding-top: 1.5em;
+  color: #47a3da;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
