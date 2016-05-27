@@ -15,12 +15,25 @@
   padding: .5em 0em .5em 0em;
 }
 
+.text_section {
+  display: none;
+}
+
 .lihead {
   display: block;
   margin-bottom: 2.5em;
+
 }
 .lihead:before {
   display: inline-block;
+}
+
+/*#nestedbutton {
+  display: none;
+}*/
+
+.button {
+  display: none;
 }
 
 .lihead p {
