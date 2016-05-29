@@ -13,6 +13,7 @@
   display: block;
   border-bottom: solid 1px lightgrey;
   padding: .5em 0em .5em 0em;
+  cursor: pointer;
 }
 
 .header:hover i {

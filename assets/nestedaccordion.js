@@ -23,7 +23,7 @@
 });
 }*/
 
-var frm = document.getElementsByClassName("header");
+/*var frm = document.getElementsByClassName("header");
 for (var i = 0; i < frm.length; ++i) {
   frm[i].addEventListener("click", function(){
     var textSection = this.nextElementSibling;
@@ -37,4 +37,31 @@ for (var i = 0; i < frm.length; ++i) {
          textSection.style.display = 'none';
      }
  });
+}*/
+
+var frm = document.getElementsByClassName("header");
+
+for (var i = 0; i < frm.length; ++i) {
+  frm[i].addEventListener("click", function(){
+    var textSection = this.nextElementSibling;
+    var style = window.getComputedStyle(textSection);
+
+
+     if(style.display === 'none'){
+         textSection.style.display = 'initial';
+
+     }
+     else {
+         textSection.style.display = 'none';
+     }
+ });
 }
+
+/*var arrow = document.getElementsByClassName("fa")
+for (var i = 0; i < frm.length; ++i) {
+   frm[i].addEventListener("click", function(){
+      arrow
+
+
+     i {
+       transform: rotateZ(45deg);*/
