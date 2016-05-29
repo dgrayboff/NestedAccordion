@@ -15,7 +15,12 @@
   padding: .5em 0em .5em 0em;
 }
 
-.text_section {
+.header:hover i {
+  transform: rotateZ(45deg);
+  color: #47a3da;
+}
+
+.textSection {
   display: none;
 }
 
@@ -28,13 +33,6 @@
   display: inline-block;
 }
 
-/*#nestedbutton {
-  display: none;
-}*/
-
-.button {
-  display: none;
-}
 
 .lihead p {
   color: #888;
@@ -42,7 +40,10 @@
   font-size: 20px;
   font-weight: 100;
   line-height: 1.50;
+}
 
+.lihead i {
+  color: #DDD;
 }
 
 .lipar {
