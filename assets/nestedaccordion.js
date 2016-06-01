@@ -10,24 +10,15 @@
 
 ////////////////////////////////////////////////////////////////
 
-// when paragraph is shown, and then you click, change the class again
-
-/*for (var i = 0; i <frm.length; i++) {
-  frm[i].addEventListener('click', function () {
-  	txt.classList.remove("text_section");
-  });*/
-
-/*for (var i = 0; i < frm.length; i++) {
-  frm[i].addEventListener('click', function () {
-   txt.classList.toggle("text_section");
-});
-}*/
+///// Vanilla JS, Original Working Code ///////
 
 /*var frm = document.getElementsByClassName("header");
+
 for (var i = 0; i < frm.length; ++i) {
   frm[i].addEventListener("click", function(){
     var textSection = this.nextElementSibling;
     var style = window.getComputedStyle(textSection);
+
 
      if(style.display === 'none'){
          textSection.style.display = 'initial';
@@ -39,29 +30,14 @@ for (var i = 0; i < frm.length; ++i) {
  });
 }*/
 
-var frm = document.getElementsByClassName("header");
+///////////////////////////////////////////////////////////////
 
-for (var i = 0; i < frm.length; ++i) {
-  frm[i].addEventListener("click", function(){
-    var textSection = this.nextElementSibling;
-    var style = window.getComputedStyle(textSection);
+///// jQuery code for week 3 assignment ///////
 
+var frm = $('.header');
 
-     if(style.display === 'none'){
-         textSection.style.display = 'initial';
-
-     }
-     else {
-         textSection.style.display = 'none';
-     }
- });
-}
-
-/*var arrow = document.getElementsByClassName("fa")
-for (var i = 0; i < frm.length; ++i) {
-   frm[i].addEventListener("click", function(){
-      arrow
-
-
-     i {
-       transform: rotateZ(45deg);*/
+$(frm).each(function(i, frm){
+  $(frm).on('click', function() {
+    $(frm).next().toggle();
+})
+})
